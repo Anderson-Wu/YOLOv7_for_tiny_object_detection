@@ -6,7 +6,7 @@
 * R10922102 林正偉
 
 ## Dataset Download 
-[Link](https://drive.google.com/file/d/14OSnqo2tzVWIM9frdvy1sr8QinwuWPZV/view?usp=sharing)
+[Link](https://drive.google.com/file/d/1JxoA4z_GBcTmQOn2TPI80QnhtqX3rbXD/view?usp=sharing)
 
 
 ## Environment Setting
@@ -17,17 +17,21 @@ conda activate yolov7
 pip install -r requirements.txt  
 ```
 
-## Training
-
-
+## Folder Structure
 ``` shell
-python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/training/<model>.yaml --img <img size> --epoch <epoch_num>  --freeze <freeze layers>
+|----code
+|----datasets----DIP(extract here)
+```
+
+## Training
+``` shell
+python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/training/<model>.yaml --img <img size> --epoch <epoch_num>  --freeze <freeze layers> --batch-size <batch_size>
 ```
 &lt;model&gt;.yaml: choose model strucures which are put in cfg/training folder  
 &lt;img size&gt;: training size and validation size  
-&lt;epoch_num&gt;: training epoch num, 100 for img-size 640, 50 for img-size 1280
-&lt;freeze layers&gt;: fixed backbone weights before assigned layer nums, 50 for fixed backbone, 52 for fixed backbone and neck, if you don't want fixed any weight, just don't use this argument
-
+&lt;epoch_num&gt;: training epoch num, 100 for img-size 640, 50 for img-size 1280  
+&lt;freeze layers&gt;: fixed backbone weights before assigned layer nums, 50 for fixed backbone, 52 for fixed backbone and neck, if you don't want fixed any weight, just don't use this argument. 
+&lt;batch_size&gt;: choose batch size depend on GPU
 
 
 
@@ -47,11 +51,12 @@ python detect.py --source <test images folder> --weights <weights path>  --img <
 &lt;weights folder&gt;: path to weights  
 &lt;img size&gt;: inference size  640 or 1280 depend on training size
 
-The results of models are [here](https://drive.google.com/drive/folders/16YDSfKHSoWqSJqqM8smkfSBRTungvsZa?usp=sharing)
+The results on testing images are [here](https://drive.google.com/drive/folders/16YDSfKHSoWqSJqqM8smkfSBRTungvsZa?usp=sharing)
 
 ## Acknowledgements
 
 <details><summary> <b>Expand</b> </summary>
+
 * [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 * [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
 * [https://github.com/WongKinYiu/yolor](https://github.com/WongKinYiu/yolor)
