@@ -73,13 +73,13 @@ backbone:
 # yolov7 head
 head:
   [
-   [-1, 1,GCA,[1024],2],
+   [-1, 1,RGCAB,[1024],2],
    [-1, 1, SPPCSPC, [512],0], # 52
   
    [-1, 1, Conv, [256, 1, 1],0],
    [-1, 1, nn.Upsample, [None, 2, 'nearest'],0],
    [37, 1, Conv, [256, 1, 1],0], # route backbone P4
-   [-1, 1, GCA,[256],2],
+   [-1, 1, RGCAB,[256],2],
    [[-1, -3], 1, Concat, [1],1],
    
    [-1, 1, Conv, [256, 1, 1],0],
@@ -94,7 +94,7 @@ head:
    [-1, 1, Conv, [128, 1, 1],0],
    [-1, 1, nn.Upsample, [None, 2, 'nearest'],0],
    [24, 1, Conv, [128, 1, 1],0], # route backbone P3
-   [-1, 1, GCA,[128],2],
+   [-1, 1, RGCAB,[128],2],
    [[-1, -3], 1, Concat, [1],1],
    
    [-1, 1, Conv, [128, 1, 1],0],
