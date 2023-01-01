@@ -25,7 +25,7 @@ python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/trainin
 ```
 &lt;model&gt;.yaml: choose model strucures which are put in cfg/training folder  
 &lt;img size&gt;: training size and validation size  
-&lt;epoch_num&gt;: training epoch num, 100 for img-size 640, 50 for img-size 1280
+&lt;epoch_num&gt;: training epoch num, 100 for img-size 640, 50 for img-size 1280  
 &lt;freeze layers&gt;: fixed backbone weights before assigned layer nums, 50 for fixed backbone, 52 for fixed backbone and neck, if you don't want fixed any weight, just don't use this argument
 
 
