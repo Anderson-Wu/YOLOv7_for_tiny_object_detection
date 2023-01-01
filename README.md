@@ -18,6 +18,7 @@ pip install -r requirements.txt
 ```
 
 ## Folder Structure
+You need to create datasets folder by yourself
 ``` shell
 |----code
 |----datasets----DIP(extract here)
