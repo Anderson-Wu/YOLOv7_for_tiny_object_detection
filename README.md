@@ -52,6 +52,7 @@ The results of models are [here](https://drive.google.com/drive/folders/16YDSfKH
 ## Acknowledgements
 
 <details><summary> <b>Expand</b> </summary>
+
 * [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
 * [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
 * [https://github.com/WongKinYiu/yolor](https://github.com/WongKinYiu/yolor)
