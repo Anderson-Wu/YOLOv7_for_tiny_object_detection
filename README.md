@@ -6,7 +6,7 @@
 * R10922102 林正偉
 
 ## Dataset Download 
-[Link](https://drive.google.com/file/d/14OSnqo2tzVWIM9frdvy1sr8QinwuWPZV/view?usp=sharing)
+[Link](https://drive.google.com/file/d/1JxoA4z_GBcTmQOn2TPI80QnhtqX3rbXD/view?usp=sharing)
 
 
 ## Environment Setting
@@ -38,7 +38,7 @@ python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/trainin
 ## Inference on Testing Dataset
 
 ### Testing Dataset Download
-[Link](https://drive.google.com/file/d/1JxoA4z_GBcTmQOn2TPI80QnhtqX3rbXD/view?usp=sharing)
+[Link](https://drive.google.com/drive/folders/1FmzosGwb6Y_HEL504mzuFrH2YdoH-WRu?usp=sharing)
 
 
 ### Weights Download
