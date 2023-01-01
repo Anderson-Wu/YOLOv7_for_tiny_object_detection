@@ -5,6 +5,8 @@
 * R10922026 吳勝濬
 * R10922102 林正偉
 
+## All the operation should be in code folder
+
 ## Dataset Download 
 [Link](https://drive.google.com/file/d/1JxoA4z_GBcTmQOn2TPI80QnhtqX3rbXD/view?usp=sharing)
 
