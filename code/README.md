@@ -46,9 +46,8 @@ python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/trainin
 [Link](https://drive.google.com/drive/folders/1DzfiwvQP9NDcm7XYrOcdzrlJwJXA88bB?usp=sharing)
 
 ``` shell
-python detect.py --source <test images folder> --weights <weights path>  --img <img size> 
+python detect.py --source ../data/ --weights <weights path>  --img <img size> 
 ```
-&lt;test images folder&gt;: folder of test images  
 &lt;weights folder&gt;: path to weights  
 &lt;img size&gt;: inference size  640 or 1280 depend on training size
 
