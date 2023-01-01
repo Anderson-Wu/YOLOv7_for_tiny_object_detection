@@ -51,7 +51,7 @@ python detect.py --source <test images folder> --weights <weights path>  --img <
 &lt;weights folder&gt;: path to weights  
 &lt;img size&gt;: inference size  640 or 1280 depend on training size
 
-The results of models are [here](https://drive.google.com/drive/folders/16YDSfKHSoWqSJqqM8smkfSBRTungvsZa?usp=sharing)
+The results on testing images are [here](https://drive.google.com/drive/folders/16YDSfKHSoWqSJqqM8smkfSBRTungvsZa?usp=sharing)
 
 ## Acknowledgements
 
