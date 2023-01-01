@@ -21,7 +21,7 @@ pip install -r requirements.txt
 You need to create datasets folder by yourself
 ``` shell
 |----code
-|----datasets----DIP(extract here)
+|----datasets----DIP(extract below dataset folder)
 ```
 
 ## Training
