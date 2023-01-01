@@ -38,9 +38,6 @@ python train.py --data DIP.yaml --weights yolov7_training.pt --cfg ./cfg/trainin
 
 ## Inference on Testing Dataset
 
-### Testing Dataset Download
-[Link](https://drive.google.com/drive/folders/1FmzosGwb6Y_HEL504mzuFrH2YdoH-WRu?usp=sharing)
-
 
 ### Weights Download
 [Link](https://drive.google.com/drive/folders/1DzfiwvQP9NDcm7XYrOcdzrlJwJXA88bB?usp=sharing)
