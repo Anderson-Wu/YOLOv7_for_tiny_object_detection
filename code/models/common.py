@@ -2174,9 +2174,19 @@ class CBAMLayer(nn.Module):
 
 
 
-class RGCAB(nn.Module):
+class RGCAB1(nn.Module):
     def __init__(self, c1,num_features, num_rcab=1, reduction=8):
-        super(RGCAB, self).__init__()
+        super(RGCAB1, self).__init__()
+        self.module = [RGCA(num_features, reduction) for _ in range(num_rcab)]
+        self.module.append(nn.Conv2d(num_features, num_features, kernel_size=3, padding=1, bias=False))
+        self.module = nn.Sequential(*self.module)
+
+    def forward(self, x):
+        return x + self.module(x)
+
+class RGCAB3(nn.Module):
+    def __init__(self, c1,num_features, num_rcab=3, reduction=8):
+        super(RGCAB3, self).__init__()
         self.module = [RGCA(num_features, reduction) for _ in range(num_rcab)]
         self.module.append(nn.Conv2d(num_features, num_features, kernel_size=3, padding=1, bias=False))
         self.module = nn.Sequential(*self.module)
